@@ -7,7 +7,7 @@ import time
 from tqdm import tqdm
 from random import randint
 
-jar_path = "target/gbif-parser-wrapper-1.0.0.jar"
+jar_path = "target/gbif-parser-wrapper-1.1.0.jar"
 
 def parse_date(date_str):
 

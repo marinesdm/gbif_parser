@@ -8,7 +8,7 @@ This repository builds a java wrapper on top of the [gbif parsers](https://githu
 mvn clean install
 ```
 
-This will build the jar in `target/gbif-parser-wrapper-1.0.0.jar`.
+This will build the jar in `target/gbif-parser-wrapper-1.1.0.jar`.
 
 ## Changing the release of the GBIF parser
 
@@ -42,7 +42,7 @@ If you choose another release of the gbif parser, you need to adapt the `pom.xml
 To parse a date using the JAR file :
 
 ```
-java -jar target/gbif-parser-wrapper-1.0.0.jar '("2024-01-01","YMD")'
+java -jar target/gbif-parser-wrapper-1.1.0.jar '("2024-01-01","YMD")'
 ```
 
 ### Date parsing from python
@@ -52,7 +52,7 @@ To use the java code from python, we just invoke the java file using a `subproce
 ```python
 import subprocess
 
-jar_path = "target/gbif-parser-wrapper-1.0.0.jar"
+jar_path = "target/gbif-parser-wrapper-1.1.0.jar"
 
 # Execute the java command with Popen and get the stdout from it
 cmd = ["java", "-jar", jar_path, date_str]
