@@ -29,7 +29,7 @@
     <dependency>
       <groupId>org.gbif</groupId>
       <artifactId>gbif-parsers</artifactId>
-      <version>0.64</version>
+      <version>0.67</version>
     </dependency>
 
     <dependency>
@@ -86,29 +86,6 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>3.1.1</version>
-        <executions>
-          <execution>
-            <id>install-local-gbif-parser</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>install-file</goal>
-            </goals>
-            <configuration>
-              <file>${project.basedir}/gbif-parsers-0.64.jar</file>
-              <groupId>org.gbif</groupId>
-              <artifactId>gbif-parsers</artifactId>
-              <version>0.64</version>
-              <packaging>jar</packaging>
-              <generatePom>true</generatePom>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

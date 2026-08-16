@@ -4,14 +4,6 @@ This repository builds a java wrapper on top of the [gbif parsers](https://githu
 
 ## To build the project
 
-You first need to get the gbif parser jar file either by :
-
-- building from the original github at [https://github.com/gbif/parsers](https://github.com/gbif/parsers),
-- or getting the JAR released on [https://repository.gbif.org/repository/releases/org/gbif/gbif-parsers/0.68/gbif-parsers-0.68.jar](https://repository.gbif.org/repository/releases/org/gbif/gbif-parsers/0.68/gbif-parsers-0.68.jar) to get the 0.68 version,
-- or use the JAR we re-distribute on the release page : [gbif-parsers-0.68.jar](https://github.com/marinesdm/gbif_parser/releases/download/1.0.0/gbif-parsers-0.68.jar)
-
-Then, you can build the package by triggering :
-
 ```
 mvn clean install
 ```
