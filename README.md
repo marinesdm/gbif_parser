@@ -19,19 +19,8 @@ If you choose another release of the gbif parser, you need to adapt the `pom.xml
     <dependency>
       <groupId>org.gbif</groupId>
       <artifactId>gbif-parsers</artifactId>
-      <version>0.68</version>
+      <version>0.67</version>
     </dependency>
-    ...
-
-            <configuration>
-              <file>${project.basedir}/gbif-parsers-0.68.jar</file>
-              <groupId>org.gbif</groupId>
-              <artifactId>gbif-parsers</artifactId>
-              <version>0.68</version>
-              <packaging>jar</packaging>
-              <generatePom>true</generatePom>
-            </configuration>
-
     ...
 ```
 
